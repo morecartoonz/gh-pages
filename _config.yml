@@ -1,0 +1,24 @@
+name: More Cartoonz
+baseurl: ""
+slideshows: ""
+
+# theme
+themecolor: "rgba(0,0,0,0.87)"
+
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  enable_coderay: false
+  hard_wrap: true
+
+# Where things are
+source:       .
+destination:  ./_site
+layouts_dir:  ./theme/_layouts
+includes_dir: ./theme/_includes
+sass:
+    sass_dir: ./theme/_sass
+
+# keep the built site tidy, only include files we need for publishing
+exclude: ["node_modules", "Gemfile", "Gruntfile.js", "package.json", "README.md", "*.sublime-project", "*.sublime-workspace"]

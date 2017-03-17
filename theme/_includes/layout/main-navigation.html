@@ -1,0 +1,50 @@
+<ul id="slide-out" class="side-nav fixed">
+
+	<span class="logo">
+        <center><img src="{{ site.baseurl }}/theme/assets/images/logo.png" alt="More Cartoonz" height="50" width="50"></center> More Cartoonz
+	</span>
+
+	<li class="bold">
+		<a href="{{ site.baseurl }}/">
+			Home
+		</a>
+	</li>
+
+	<!--li class="bold">
+		<a href="{{ site.baseurl }}/calendar.html">
+			Calendar
+		</a>
+	</li-->
+
+	<!--li class="bold">
+		<a href="{{ site.baseurl }}/development.html">
+			Development Progress
+		</a>
+	</li-->
+
+
+
+
+	<!-- modules -->
+	<li>
+
+		<span class="heading">Cartoon List</span>
+
+		<ul class="modules">
+			<!-- one list item for each module -->
+			{% for module in site.data.modules %}
+				<li>
+					<a href="{{ site.baseurl }}/cartoonz/{{ module.slug }}"
+					   class="">
+						{{ module.name }}
+					</a>
+				</li>
+
+			{% endfor %}
+		</ul>
+	</li>
+
+	
+
+</ul>
+<a href="#" data-activates="slide-out" class="button-collapse main-menu-toggle"><i class="material-icons">menu</i></a>

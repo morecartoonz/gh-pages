@@ -1,0 +1,35 @@
+# possible statuses:
+#   - not-started  (0%)
+#   - started      (25%)
+#   - in-progress  (50%)
+#   - in-review    (75%)
+#   - completed    (100%)
+
+ - name: Paw Patrol
+   slug: paw-patrol
+   status:
+     weeklySchedule: started
+     assessmentGuide: started
+     teachingGuide: not-started
+     teachingResources: not-started
+     assessmentResources: not-started
+  
+
+ - name: PJ Masks
+   slug: pj-masks
+   status:
+     weeklySchedule: not-started
+     assessmentGuide: in-progress
+     teachingGuide: not-started
+     teachingResources: in-progress
+     assessmentResources: started
+
+ - name: Fireman Sam
+   slug: fireman-sam
+   status:
+     weeklySchedule: started
+     assessmentGuide: started
+     teachingGuide: not-started
+     teachingResources: not-started
+     assessmentResources: not-started
+
